@@ -1,7 +1,7 @@
 pipeline {
     agent any
         stages {
-             stgae {
+             stage {
                steps {
                  Script {
                     sh 'docker build -t my-firstpipe .'
