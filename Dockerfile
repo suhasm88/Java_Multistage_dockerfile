@@ -2,7 +2,7 @@ FROM maven as maven
 RUN mkdir /usr/src/mymaven
 WORKDIR /usr/src/mymaven
 COPY . .
-RUN mvn install 
+RUN mvn clean install 
 
 FROM tomcat 
 WORKDIR webapps 
