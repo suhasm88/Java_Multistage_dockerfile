@@ -2,7 +2,7 @@ FROM maven as maven
 RUN mkdir /usr/src/mymaven
 WORKDIR /usr/src/mymaven
 COPY . .
-RUN mvn install -DskipTests
+RUN mvn install 
 
 FROM tomcat 
 WORKDIR webapps 
